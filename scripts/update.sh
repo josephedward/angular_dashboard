@@ -1,0 +1,1 @@
+sudo ng update --all --force
