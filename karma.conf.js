@@ -40,6 +40,6 @@ module.exports = function (config) {
     autoWatch: true,
     browsers: ['Chrome'],
     singleRun: false,
-    WORKERS: process.env.WEB_CONCURRENCY || 1
+    // WORKERS: process.env.WEB_CONCURRENCY || 1
   });
 };
