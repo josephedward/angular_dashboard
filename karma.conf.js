@@ -34,12 +34,12 @@ module.exports = function (config) {
     reporters: config.angularCli && config.angularCli.codeCoverage
               ? ['progress', 'coverage-istanbul']
               : ['progress', 'kjhtml'],
-    port: 9876||process.env.PORT,
+    port: process.env.PORT||9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
     singleRun: false,
-    // WORKERS: process.env.WEB_CONCURRENCY || 1
+    WORKERS: process.env.WEB_CONCURRENCY || 1
   });
 };
