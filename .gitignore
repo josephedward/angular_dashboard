@@ -42,3 +42,8 @@ testem.log
 Thumbs.db
 
 misc
+
+/documentation
+documentation/*
+
+
