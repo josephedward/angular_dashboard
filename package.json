@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && ng build --prod -o",
-    "heroku-postbuild": "cd dist && ng build --prod"
+    "heroku-postbuild": "ng build --prod && cd dist && ng serve"
   },
   "engines": {
     "node": "^10.9",
